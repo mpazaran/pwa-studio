@@ -1,5 +1,5 @@
 {
-  "name": "@magento/venia-concept",
+  "name": "@magento/vitro-concept",
   "version": "4.0.0",
   "publishConfig": {
     "access": "public"
@@ -18,7 +18,7 @@
     "clean": "rimraf dist",
     "download-schema": "graphql get-schema --project venia --insecure",
     "lint": "eslint --ignore-path .gitignore 'src/**/{*.js,package.json}'",
-    "load-env": "node ../pwa-buildpack/bin/buildpack load-env --core-dev-mode .",
+    "load-env": "node node_modules/@magento/pwa-buildpack/bin/buildpack load-env --core-dev-mode .",
     "prepare": "yarn run load-env",
     "prettier": "prettier --loglevel warn --single-quote --ignore-path .gitignore 'src/**/*.@(css|graphql|js)' '*.js'",
     "prettier:check": "yarn run -s prettier -- --check",
