@@ -2,7 +2,7 @@ veniaResponse:
   resolver: conditional
   when:
     - matches: request.url.pathname
-      pattern: ^/(graphql|rest)(/|$)
+      pattern: ^/(graphql|rest|media)(/|$)
       use: veniaProxy
     - matches: request.url.pathname
       pattern: ^/(robots\.txt|favicon\.ico|manifest\.json)
